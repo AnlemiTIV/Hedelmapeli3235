@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestiTiedosto - CSS DIV sijoitus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <header>
+        <h1>HEDELMÄPELI</h1>
+    </header>
+
+    <main>
+        <div class="kuvaDivi">            
+            <div class="omatRahat">
+                <p>Rahaa: <span id="rahaaYhteensa">$50</span></p>
+            </div>
+            <div class="omatRahat">
+                <p>Panos: <span id="panosRaha">$1</span></p>
+            </div>
+
+            <div class="panosDIV-k1 panos-effekti" id="panosLukko1" onclick="panosFunktio(1)">
+                <img src="kuvat2/kolikko.png" alt="kuvatestailua">
+                <p class="panos-1">$1</p>
+            </div>
+            
+            <div class="panosDIV-k2 panos-effekti" id="panosLukko2" onclick="panosFunktio(2)">
+                <img src="kuvat2/kolikko.png" alt="kuvatestailu2">
+                <p class="panos-2">$2</p>
+            </div>
+    
+            <div class="panosDIV-k3 panos-effekti" id="panosLukko3" onclick="panosFunktio(3)">
+                <img src="kuvat2/kolikko.png" alt="kuvatestailu3"> 
+                <p class="panos-3">$3</p>
+            </div>          
+        </div>
+
+        <div class="palkintoDivi">
+            <div class="palkinto-1">
+                <img>
+            </div>
+            <div class="palkinto-1-kolikko">
+                <img id="kolikot" src="kuvat2/kolikko.png" alt="kolikon kuva">
+                <p>2</p>
+            </div>
+            <div class="palkinto-2"><!--paarynä-->
+                <img>
+            </div>
+            <div class="palkinto-1-kolikko">
+                <img id="kolikot" src="kuvat2/kolikko.png" alt="kolikon kuva">
+                <p>4</p>
+            </div>
+            <div class="palkinto-3"><!--kirsikka-->
+                <img>
+            </div>
+            <div class="palkinto-1-kolikko">
+                <img id="kolikot" src="kuvat2/kolikko.png" alt="kolikon kuva">
+                <p>6</p>
+            </div>
+            <div class="palkinto-4"><!--vesimeloni-->
+                <img>
+            </div>
+            <div class="palkinto-1-kolikko">
+                <img id="kolikot" src="kuvat2/kolikko.png" alt="kolikon kuva">
+                <p>8</p>
+            </div>
+        </div>
+
+        <img id="winningImage" src="kuvat2/voitto.png" alt="voitto teksti" style="display:none;">
+        <img id="losingImage" src="kuvat2/havio.png" alt="havio teksti" style="display:none;">
+
+        <!--Slots lock etc-->
+        <div class="slots-Rolls">
+
+            <div class="panosDIV2">
+                <img src="kuvat2/Omena.png" alt="slots 1" id="slots-0">
+            </div>
+            
+            <div class="panosDIV2">
+                <img src="kuvat2/vesimeloni.png" alt="slots 2" id="slots-1">
+            </div>
+    
+            <div class="panosDIV2">
+                <img src="kuvat2/Paaryna.png" alt="slots 3" id="slots-2">
+            </div>
+            
+            <div class="panosDIV2">
+                <img src="kuvat2/Kirsikat.png" alt="slots 4" id="slots-3">
+            </div>
+            
+            <div class="lukot" id="lukko_01" onclick="lukitseTila(1)">
+                <img src="kuvat2/lukko.png" alt="lukon kuva" class="lukitse_css" id="lukitseValinta1">
+            </div>
+            <div class="lukot" id="lukko_02" onclick="lukitseTila(2)">
+                <img src="kuvat2/lukko.png" alt="lukon kuva" class="lukitse_css" id="lukitseValinta2">
+            </div>
+            <div class="lukot" id="lukko_03" onclick="lukitseTila(3)">
+                <img src="kuvat2/lukko.png" alt="lukon kuva" class="lukitse_css" id="lukitseValinta3">
+            </div>
+            <div class="lukot" id="lukko_04" onclick="lukitseTila(4)">
+                <img src="kuvat2/lukko.png" alt="lukon kuva" class="lukitse_css" id="lukitseValinta4">
+            </div>
+        </div>
+
+        <div class="play-button" id="play-disable" onclick="slotsPlay()">
+            <p>PELAA</p>
+        </div>
+
+    </main>
+    <script src="JS-Hedelma.js"></script>
+</body>
+</html>

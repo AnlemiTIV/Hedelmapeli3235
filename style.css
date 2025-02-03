@@ -1,0 +1,363 @@
+body {
+    height: 100%;
+    width: 1519px;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(139, 199, 148);
+    text-decoration:underline;
+    color: rgb(149, 46, 63);
+    margin: 0px;
+    padding: 2px 1px 2px 1px;
+    font-size: 38px;
+    
+}
+
+/*Kuvan asettelu ja teksin asettelu testailua*/
+
+/*Laatikko mihin raha, panos ja 3 kuvaa tulevat*/
+.kuvaDivi {
+    position: absolute;
+    background-color: rgb(114, 197, 146);
+    width: 329px;
+    height: 230px;
+    padding: 10px;
+    left: 270px;
+    top: 73px;
+}
+
+.kuvaDivi p {
+    text-align: center;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 2px;
+}
+.omatRahat{
+    background-color: white;
+    margin: 2px;
+    padding: 0px;
+}
+.omatRahat p {
+    color: green;
+    font-weight: 900;
+    font-size: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.panosDIV-k1{
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    width: 97px;
+    height: 141px;
+
+}
+.panosDIV-k2{
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    width: 97px;
+    height: 141px;
+
+}
+.panosDIV-k3{
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    width: 97px;
+    height: 141px;
+}
+
+.panos-1 {
+    position: absolute;
+    background-color: rgb(255, 226, 226);
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    top: 94px;
+    left: 33px;
+    margin: 0px;
+    padding: 2px;
+}
+
+.panos-2 {
+    position: absolute;
+    background-color: rgb(255, 226, 226);
+    font-size: 26px;
+    top: 94px;
+    left: 33px;
+    margin: 0px;
+    padding: 2px;
+}
+
+.panos-3 {
+    position: absolute;
+    background-color: rgb(255, 226, 226);
+    font-size: 26px;
+    top: 94px;
+    left: 33px;
+    margin: 0px;
+    padding: 2px;
+}
+
+.kuvaDivi img {
+    width: 90px;
+    background-color: rgb(182, 224, 189);
+    font-size: 20px;
+    margin: 1px;
+    padding-bottom: 50px;
+    border: 3px solid white;
+    pointer-events: none;
+    
+}
+
+
+
+
+/*Palkinto DIV (aside, oikealla puolella sivua*/
+
+.palkintoDivi {
+    position: relative; /*Tai absolute, jos ei toimi samalla tavalla kuin toisessa divissä/elementti blockissa*/
+    display: column;
+    background-color: rgb(114, 197, 146);
+    float: right;
+    width: 580px;
+    height: 505px;
+    padding: 7px 0px 0px 10px;
+    left: 0px;
+    top: 15px;
+}
+
+/*Kerrokset, joissa kuvat ja pisteet näkyy*/
+.palkinto-1{
+    display: flex; /*inline-block*/
+    float: left;
+    flex-direction: column;
+    position: relative; /*vaikuttaa toimivan toistaiseksi*/
+    background-color: rgb(226, 255, 231);
+    margin: 9px 0px 0px 2px;
+    width: 420px;
+    height: 114px;
+    border: rgb(46, 152, 58) 4px solid;
+    border-bottom: 0px;
+}
+
+.palkinto-1-kolikko{
+    display: inline-flex;
+    float: right;
+    position: relative;
+    justify-content: center;
+    margin-top: 5px;
+    top: 10px;
+    left: -20px;
+    width: 105px;
+    height: 90px;
+    background-color: rgb(182, 224, 189);
+    border: rgb(46, 152, 58) 4px solid;
+    pointer-events: none;
+}
+#kolikot{    
+    position: relative;
+    margin: 0px;
+    top: 30px;
+    left: 32px;
+    width: 33px;
+    height: 33px;
+    pointer-events: none;
+}
+
+
+.palkinto-2{
+    display: flex; /*inline-block*/
+    float: left;
+    flex-direction: column;
+    position: relative; /*vaikuttaa toimivan toistaiseksi*/
+    background-color: rgb(182, 224, 189);
+    margin: 0px 0px 0px 2px;
+    width: 420px;
+    height: 114px;
+    border: rgb(46, 152, 58) 4px solid;
+    border-bottom: 0px;
+}
+
+/*Palkinto-2-kolikko*/
+
+.palkinto-3{
+    display: flex; /*inline-block*/
+    float: left;
+    flex-direction: column;
+    position: relative; /*vaikuttaa toimivan toistaiseksi*/
+    background-color: rgb(182, 224, 189);
+    margin: 0px 0px 0px 2px;
+    width: 420px;
+    height: 114px;
+    border: rgb(46, 152, 58) 4px solid;
+    border-bottom: 0px;
+}
+
+/*Palkinto-3-kolikko*/
+
+.palkinto-4{
+    display: flex; /*inline-block*/
+    float: left;
+    flex-direction: column;
+    position: relative; /*vaikuttaa toimivan toistaiseksi*/
+    background-color: rgb(182, 224, 189);
+    margin: 0px 0px 0px 2px;
+    width: 420px;
+    height: 114px;
+    border: rgb(46, 152, 58) 4px solid;
+}
+
+/*Palkinto-4-kolikko*/
+
+.palkinto-1 img {
+    /*Jatka täältä toisella kerralla*/
+    background-repeat: repeat-x; 
+    background-image: url("kuvat2/Omena.png");
+    background-size: 105px 115px;
+    width: 420px;
+    height: 120px;
+    background-color: rgb(182, 224, 189);
+    margin: 0px 0px 0px 0px;
+    pointer-events: none;
+    border-style: none;
+    
+}
+.palkinto-2 img {
+    /*Jatka täältä toisella kerralla*/
+    background-repeat: repeat-x; 
+    background-image: url("kuvat2/Paaryna.png");
+    background-size: 105px 115px;
+    width: 420px;
+    height: 120px;
+    background-color: rgb(182, 224, 189);
+    margin: 0px 0px 0px 0px;
+    pointer-events: none;
+    border-style: none;
+    
+}
+.palkinto-3 img {
+    /*Jatka täältä toisella kerralla*/
+    background-repeat: repeat-x; 
+    background-image: url("kuvat2/Kirsikat.png");
+    background-size: 105px 115px;
+    width: 420px;
+    height: 120px;
+    background-color: rgb(182, 224, 189);
+    margin: 0px 0px 0px 0px;
+    pointer-events: none;
+    border-style: none;
+    
+}
+.palkinto-4 img {
+    /*Jatka täältä toisella kerralla*/
+    background-repeat: repeat-x; 
+    background-image: url("kuvat2/vesimeloni.png");
+    background-size: 105px 115px;
+    width: 420px;
+    height: 120px;
+    background-color: rgb(182, 224, 189);
+    margin: 0px 0px 0px 0px;
+    pointer-events: none;
+    border-style: none;
+    
+}
+
+/*Numero kolikon vieressä*/
+.palkintoDivi p {
+    text-align: center;
+    position: absolute;
+    top: 17px;
+    left: 41px;
+    font-size: 44px;
+    color: rgb(246, 255, 118);
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+}
+
+
+/*Alin vasen osio, elementti*/
+.slots-Rolls {
+    position: absolute;
+    background-color: rgb(182, 216, 195); /*112,160,130*/
+    width: 900px;
+    height: 430px;
+    padding: 2px;
+    left: 8px;
+    top: 370px;
+}
+
+.slots-Rolls img {
+    position: relative;
+    top: 0px;
+    width: 151px;
+    height: 151px;
+    background-color: rgb(144, 192, 152);
+    margin: 0px;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid white;
+    pointer-events: none;
+}
+
+/*Muokkaa kuvien väliä/sijoittaa?*/
+.panosDIV2{
+    display: inline-block;
+    position: relative;
+    background-color: orange;
+    margin: 30px 53px 0px 53px;
+    width: 97px;
+    height: 100px;
+}
+
+/*Lukot vvvv*/
+
+.lukot img {
+    position: relative;
+    top: 0px;
+    width: 111px;
+    height: 111px;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    pointer-events: none;
+    border: black solid 3px;
+}
+
+/*ei pitäisi kuvan leveyttä muokata vvvvv*/
+.lukot{
+    display: inline-block;
+    position: relative;
+    background-color: rgb(61, 61, 61);
+    top: 5px;
+    left: 37px;
+    margin: 35px 50px 0px 40px;
+    width: 115px;
+    height: 115px;
+}
+
+.play-button {
+    position: relative;
+    float: right;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(123, 199, 146);
+    width: 400px;
+    height: 130px;
+    padding: 0px;
+    margin: 0px;
+    left: 500px;
+    top: 570px;
+    border: 4px black solid;
+    border-radius: 50px;
+    box-shadow: 0 5px rgb(79, 79, 79);
+}
+
+.play-button p {
+    margin-top: 28px;
+    font-size: 60px;
+    text-decoration: underline;
+}

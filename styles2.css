@@ -1,0 +1,67 @@
+/*Panos, 1, 2, ja 3 effektit*/
+.panos-effekti:hover {
+    cursor:pointer;
+}
+.panos-effekti:hover p {
+    cursor: pointer;
+}
+
+/*Play button effektit*/
+.play-button:hover {
+    cursor: pointer;
+}
+.play-button:active {
+    background-color: rgb(85, 149, 104);
+    cursor: pointer;
+    box-shadow: 0 3px rgb(23, 23, 23);
+    transform: translateY(3px);
+}
+
+/*Lukitse effektit*/
+
+.lukot:hover{
+    cursor:pointer;
+}
+.lukot:active {
+    cursor: pointer;
+}
+
+
+/*Lukko toiminnot, ChatGPT:n avulla*/
+
+.locked {
+    opacity: 0.5;
+}
+.locked2 {
+    filter:brightness(70%);
+}
+
+/*Kuvan näyttäminen. If Win, if Lose*/
+
+#winningImage {
+    position: absolute;
+    width: 520px;
+    height: 390px;
+    top: 130px;
+    left: 49%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+#losingImage {
+    position: absolute;
+    width: 320px;
+    height: 290px;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-out {
+    opacity: 0;
+  }
